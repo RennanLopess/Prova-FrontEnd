@@ -39,10 +39,11 @@ A quantidade de tarefas pendentes e concluídas é exibida ao lado da lista de t
 
 ## Autor
 
-Feito por **Rennan Rentz** **RA: 24073445-2** para o GDG Londrina.
+Feito por **Rennan Rentz** 
+**RA: 24073445-2** para o GDG Londrina.
 
 ## Imagem exemplar do código
 
-![Lista de Tarefas](print-provaFront.png)
+![Preview do Projeto](print-provaFront.png)
 
 
