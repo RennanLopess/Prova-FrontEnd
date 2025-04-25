@@ -44,7 +44,17 @@ function renderTasks(){
             tasks[index].text = taskText.textContent;
         });
 
-        
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = task.completed;
+        checkbox.className = "form-check-input me-2";
+        checkbox.addEventListener("change", () => {
+            tasks[index].completed = checkbox.checked;
+            renderTasks();
+        });
+
+        const deleteBtn = 
+
     })
 }
 
