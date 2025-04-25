@@ -58,7 +58,7 @@ function renderTasks(){
         deleteBtn.textContent = "Excluir";
         deleteBtn.addEventListener("click", () => {
             tasks.splice(index, 1);
-            renderTasks;
+            renderTasks();
         });
         
         li.appendChild(checkbox);
