@@ -19,4 +19,32 @@ function addTask(){
     renderTasks();
 }
 
+function renderTasks(){
+    taskList.innerHTML = "";
+    let pendentes = 0;
+    let concluidas = 0;
+
+    tasks.forEach((task, index) => {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-items-center";
+
+        const taskText = document.createElement("span");
+        taskText.textContent = task.text;
+        taskText.contentEditable = true;
+        taskText.className = "flex-grow-1 mx-2";
+        if(task.completed){
+            taskText.style.textDecoration = "line-through";
+            taskText.style.color = "gray";
+            concluidas++;
+        }else{
+            pendentes++;
+        }
+
+        taskText.addEventListener("blur", () => {
+            tasks[index].text = taskText.textContent;
+        });
+
+        
+    })
+}
 
