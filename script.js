@@ -60,7 +60,13 @@ function renderTasks(){
             tasks.splice(index, 1);
             renderTasks;
         });
+        
+        li.appendChild(checkbox);
+        li.appendChild(taskText);
+        li.appendChild(deleteBtn);
+        taskList.appendChild(li);
+    });
 
-    })
+    
 }
 
