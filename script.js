@@ -67,6 +67,7 @@ function renderTasks(){
         taskList.appendChild(li);
     });
 
-    
+    pendingCount.textContent = `Pendentes: ${pendentes}`;
+    completedCount.textContent = `Concluídas: ${concluidas}`;
 }
 
