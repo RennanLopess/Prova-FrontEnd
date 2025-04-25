@@ -12,5 +12,11 @@ taskInput.addEventListener("keypress", (e) => {
 });
 
 function addTask(){
-    
+    const text = taskInput.value.trim();
+    if(text === "")return;
+    tasks.push({ text, completed: false});
+    taskInput.value = "";
+    renderTasks();
 }
+
+
