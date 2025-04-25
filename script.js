@@ -1,3 +1,4 @@
+// Array para armazenar as tarefas
 let tasks = [];
 
 const taskInput = document.getElementById("taskInput");
@@ -6,6 +7,7 @@ const addTaskBtn = document.getElementById("addTaskBtn");
 const pendingCount = document.getElementById("pendingCount");
 const completedCount = document.getElementById("completedCount");
 
+// Evento para adicionar tarefa ao clicar em botão
 addTaskBtn.addEventListener("click", addTask);
 taskInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") addTask();
