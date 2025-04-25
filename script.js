@@ -53,7 +53,13 @@ function renderTasks(){
             renderTasks();
         });
 
-        const deleteBtn = 
+        const deleteBtn = document.createElement("button");
+        deleteBtn.className = "btn btn-danger btn-sm ms-2";
+        deleteBtn.textContent = "Excluir";
+        deleteBtn.addEventListener("click", () => {
+            tasks.splice(index, 1);
+            renderTasks;
+        });
 
     })
 }
